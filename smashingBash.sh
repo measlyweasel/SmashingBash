@@ -55,6 +55,8 @@ Available Commands
 EOF
 }
 
+function join { local IFS="$1"; shift; echo "$*"; }
+
 function read_params() {
  while test $# -gt 0
   do
